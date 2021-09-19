@@ -22,7 +22,17 @@ namespace Task_Manager
         {
             InitializeComponent();
         }
-        
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
+
         //live update cpu usage
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -43,6 +53,10 @@ namespace Task_Manager
             startCpuThread();
             currentClockSpeed();
         }
+
+
+
+
 
         //live update cpu usage chart not accumulate, floating chart
         private void getPerformanceCounters()
@@ -118,6 +132,12 @@ namespace Task_Manager
 
         //CPU Max Clock Speed
         uint currentsp, Maxsp;
+
+        private void cpuTempTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         private void currentClockSpeed()
         {
             var searcher = new ManagementObjectSearcher(

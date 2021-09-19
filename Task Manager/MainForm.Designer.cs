@@ -69,6 +69,7 @@ namespace Task_Manager
             this.gpu1 = new Task_Manager.GPU();
             this.license1 = new Task_Manager.License();
             this.howToUse1 = new Task_Manager.HowToUse();
+            this.allProgram1 = new Task_Manager.allProgram();
             this.formControlPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             this.statiticsPanel.SuspendLayout();
@@ -167,6 +168,7 @@ namespace Task_Manager
             this.allProgramBtn.TabIndex = 26;
             this.allProgramBtn.Text = "All Program";
             this.allProgramBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.allProgramBtn.Click += new System.EventHandler(this.allProgramBtn_Click);
             // 
             // developerBtn
             // 
@@ -286,7 +288,7 @@ namespace Task_Manager
             this.memoryBtn.ShadowDecoration.Parent = this.memoryBtn;
             this.memoryBtn.Size = new System.Drawing.Size(141, 32);
             this.memoryBtn.TabIndex = 20;
-            this.memoryBtn.Text = "Memory";
+            this.memoryBtn.Text = "Memory(Add Soon)";
             this.memoryBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // gpuBtn
@@ -310,7 +312,7 @@ namespace Task_Manager
             this.gpuBtn.ShadowDecoration.Parent = this.gpuBtn;
             this.gpuBtn.Size = new System.Drawing.Size(141, 32);
             this.gpuBtn.TabIndex = 19;
-            this.gpuBtn.Text = "GPU";
+            this.gpuBtn.Text = "GPU(Add Soon)";
             this.gpuBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gpuBtn.Click += new System.EventHandler(this.gpuBtn_Click);
             // 
@@ -621,12 +623,22 @@ namespace Task_Manager
             this.howToUse1.Size = new System.Drawing.Size(789, 679);
             this.howToUse1.TabIndex = 8;
             // 
+            // allProgram1
+            // 
+            this.allProgram1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.allProgram1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.allProgram1.Location = new System.Drawing.Point(179, 32);
+            this.allProgram1.Name = "allProgram1";
+            this.allProgram1.Size = new System.Drawing.Size(789, 679);
+            this.allProgram1.TabIndex = 9;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1234, 711);
+            this.Controls.Add(this.allProgram1);
             this.Controls.Add(this.howToUse1);
             this.Controls.Add(this.license1);
             this.Controls.Add(this.developer1);
@@ -698,6 +710,7 @@ namespace Task_Manager
         private Developer developer1;
         private License license1;
         private HowToUse howToUse1;
+        private allProgram allProgram1;
     }
 }
 

@@ -83,9 +83,9 @@ namespace Task_Manager
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(459, 195);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 26);
+            this.label5.Size = new System.Drawing.Size(80, 26);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Hexahedron74";
+            this.label5.Text = "Gloomn";
             // 
             // label4
             // 
@@ -106,9 +106,9 @@ namespace Task_Manager
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(65, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 26);
+            this.label3.Size = new System.Drawing.Size(80, 26);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Hexahedron74";
+            this.label3.Text = "Gloomn";
             // 
             // label2
             // 

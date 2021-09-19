@@ -31,6 +31,15 @@ namespace Task_Manager
 
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
         void SaveData()
         {
             for (int i = 0; i <= 100; i++)
@@ -109,6 +118,7 @@ namespace Task_Manager
             howToUse1.Hide();
             developer1.Hide();
             dashboard1.BringToFront();
+            allProgram1.Hide();
         }
 
         private void cpuBtn_Click(object sender, EventArgs e)
@@ -120,6 +130,7 @@ namespace Task_Manager
             gpu1.Hide();
             howToUse1.Hide();
             developer1.Hide();
+            allProgram1.Hide();
             using (waitForm form = new waitForm(SaveData))
             {
                 form.ShowDialog(this);
@@ -134,6 +145,7 @@ namespace Task_Manager
             cpu1.Hide();
             developer1.Hide();
             howToUse1.Hide();
+            allProgram1.Hide();
             using (waitForm form = new waitForm(SaveData))
             {
                 form.ShowDialog(this);
@@ -142,24 +154,17 @@ namespace Task_Manager
 
         private void developerBtn_Click(object sender, EventArgs e)
         {
-            using (waitForm form = new waitForm(SaveData))
-            {
-                form.ShowDialog(this);
-            }
             developer1.Show();
             developer1.BringToFront();
             dashboard1.Hide();
             cpu1.Hide();
             gpu1.Hide();
             howToUse1.Hide();
+            allProgram1.Hide();
         }
 
         private void licenseBtn_Click(object sender, EventArgs e)
         {
-            using (waitForm form = new waitForm(SaveData))
-            {
-                form.ShowDialog(this);
-            }
             license1.Show();
             license1.BringToFront();
             dashboard1.Hide();
@@ -167,14 +172,11 @@ namespace Task_Manager
             cpu1.Hide();
             gpu1.Hide();
             howToUse1.Hide();
+            allProgram1.Hide();
         }
 
         private void howToUseBtn_Click(object sender, EventArgs e)
         {
-            using (waitForm form = new waitForm(SaveData))
-            {
-                form.ShowDialog(this);
-            }
             howToUse1.Show();
             howToUse1.BringToFront();
             license1.Hide();
@@ -182,6 +184,19 @@ namespace Task_Manager
             developer1.Hide();
             cpu1.Hide();
             gpu1.Hide();
+            allProgram1.Hide();
+        }
+
+        private void allProgramBtn_Click(object sender, EventArgs e)
+        {
+            allProgram1.Show();
+            allProgram1.BringToFront();
+            license1.Hide();
+            dashboard1.Hide();
+            developer1.Hide();
+            cpu1.Hide();
+            gpu1.Hide();
+            howToUse1.Hide();
         }
     }
 }

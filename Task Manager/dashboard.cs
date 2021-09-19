@@ -160,6 +160,7 @@ namespace Task_Manager
                         else
                             str[i] = macAddr[i].ToString("X2") + ":";
                     }
+                   
                     string mac = string.Join("", str);
                     label6.Text = string.Format("{0}", System.Text.ASCIIEncoding.ASCII.GetString(wlanBssEntry.dot11Ssid.SSID));
                     Console.WriteLine("WIFI information has been successfully loaded.\n");

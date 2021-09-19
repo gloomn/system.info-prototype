@@ -53,12 +53,17 @@ namespace Task_Manager
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.chartCPU = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.cpuTempTimer = new System.Windows.Forms.Timer(this.components);
             this.cpuUsagePb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCPU)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
+            this.guna2CircleProgressBar1.SuspendLayout();
             this.SuspendLayout();
             // 
             // storage_main_title
@@ -271,6 +276,8 @@ namespace Task_Manager
             // guna2CustomGradientPanel3
             // 
             this.guna2CustomGradientPanel3.BorderRadius = 20;
+            this.guna2CustomGradientPanel3.Controls.Add(this.guna2CircleProgressBar1);
+            this.guna2CustomGradientPanel3.Controls.Add(this.label2);
             this.guna2CustomGradientPanel3.Controls.Add(this.cpuUsagePb);
             this.guna2CustomGradientPanel3.Controls.Add(this.label1);
             this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(17, 470);
@@ -278,6 +285,46 @@ namespace Task_Manager
             this.guna2CustomGradientPanel3.ShadowDecoration.Parent = this.guna2CustomGradientPanel3;
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(750, 192);
             this.guna2CustomGradientPanel3.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(86, 162);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 19);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "CPU Temperature";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(50, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 19);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "0";
+            // 
+            // guna2CircleProgressBar1
+            // 
+            this.guna2CircleProgressBar1.BackColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar1.Controls.Add(this.label3);
+            this.guna2CircleProgressBar1.FillThickness = 10;
+            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(90, 22);
+            this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
+            this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(124)))), ((int)(((byte)(206)))));
+            this.guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(124)))), ((int)(((byte)(206)))));
+            this.guna2CircleProgressBar1.ProgressThickness = 10;
+            this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
+            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(129, 128);
+            this.guna2CircleProgressBar1.TabIndex = 11;
+            // 
+            // cpuTempTimer
+            // 
+            this.cpuTempTimer.Tick += new System.EventHandler(this.cpuTempTimer_Tick);
             // 
             // CPU
             // 
@@ -302,6 +349,8 @@ namespace Task_Manager
             ((System.ComponentModel.ISupportInitialize)(this.chartCPU)).EndInit();
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel3.PerformLayout();
+            this.guna2CircleProgressBar1.ResumeLayout(false);
+            this.guna2CircleProgressBar1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +378,9 @@ namespace Task_Manager
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
         private System.Windows.Forms.Label ClockSpeed;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer cpuTempTimer;
     }
 }

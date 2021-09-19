@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>게시\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -156,6 +156,12 @@
     <Compile Include="listBoxStyle.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="allProgram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="allProgram.Designer.cs">
+      <DependentUpon>allProgram.cs</DependentUpon>
+    </Compile>
     <Compile Include="waitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="allProgram.resx">
+      <DependentUpon>allProgram.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Developer.resx">
       <DependentUpon>Developer.cs</DependentUpon>
     </EmbeddedResource>
