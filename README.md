@@ -37,9 +37,13 @@
 
 ---
 ### 개발현황
-* 메인 대시보드는 다 만들었습니다.
-* CPU탭은 거의 다 만들었습니다.
-* Form 대기 프로세싱 화면 업데이트(GPU 탭 개발 예정)
+* Main Dashboard(완료)
+* All Programs(완료)
+* 부가적인 탭드(완료)
+* Form 대기 프로세싱 화면 업데이트(완료)
+* GPU 탭 추가 예정
+* Memory 탭 추가 예정
+* CPU탭(온도 프로세스바 예정)
 ![image](https://user-images.githubusercontent.com/57221033/111115213-a5a4b680-85a7-11eb-9b8b-d7e9e52551a9.png)
 
 ---
