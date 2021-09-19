@@ -1,5 +1,5 @@
 # system.info
-![GitHub](https://img.shields.io/badge/developer-hexahedron74-blue)
+![GitHub](https://img.shields.io/badge/developer-hexahedron74(gloomn)-blue)
 ![GitHub](https://img.shields.io/github/license/hexahedron74/CSharp-system.info-laptop-only)
 ![GitHub](https://img.shields.io/github/languages/top/hexahedron74/CSharp-system.info-laptop-only)
 ![GitHub](https://img.shields.io/github/languages/code-size/hexahedron74/CSharp-system.info-laptop-only)
