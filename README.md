@@ -48,4 +48,4 @@
 
 ---
 ### 이메일
-* support@syntaxack.kro.kr
+* hexahedron74@naver.com
