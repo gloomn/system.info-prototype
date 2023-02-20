@@ -1,13 +1,14 @@
 # system.info
-![.Net](https://img.shields.io/badge/.NET_Framework_4.7.2-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![C#](https://img.shields.io/badge/c%23_7.3-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) 
-![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) 
-![Licence](https://img.shields.io/github/license/hexahedron74/CSharp-system.info-laptop-only?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/developer-hexahedron74(gloomn)-blue)
+![GitHub](https://img.shields.io/github/license/hexahedron74/CSharp-system.info-laptop-only)
+![GitHub](https://img.shields.io/github/languages/top/hexahedron74/CSharp-system.info-laptop-only)
+![GitHub](https://img.shields.io/github/languages/code-size/hexahedron74/CSharp-system.info-laptop-only)
+
 ---
 ### 소개
 * [**CSharp**] 기반의 시스템 정보 프로그램입니다.
 * 아직 미완성된 프로그램이며 계속 개발중입니다.
+#사실 지금 이 레포에 있는 프로그램은 그냥 대충 만든 걸로 하고 WPF로 새로 만들어오겠습니다><
 
 ---
 ### 사용한 레퍼런스
